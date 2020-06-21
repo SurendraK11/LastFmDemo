@@ -33,6 +33,7 @@
 		4410EEBB249EE8B700629BF9 /* DataServiceProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410EEB7249EE8B700629BF9 /* DataServiceProviderMock.swift */; };
 		4410EEBC249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */; };
 		4410EEBD249EE8B700629BF9 /* AlbumsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */; };
+		44DC380D249EEEB1004BEFAC /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC380C249EEEB1004BEFAC /* XCTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		4410EEB7249EE8B700629BF9 /* DataServiceProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceProviderMock.swift; sourceTree = "<group>"; };
 		4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelDelegateMock.swift; sourceTree = "<group>"; };
 		4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelTests.swift; sourceTree = "<group>"; };
+		44DC380C249EEEB1004BEFAC /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		4410EE7E249EE59100629BF9 /* LastFmDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				44DC380B249EEE99004BEFAC /* Extension */,
 				440689AF249EEB8000883C8E /* Mocks */,
 				440689AE249EEB6D00883C8E /* Tests */,
 				4410EE81249EE59100629BF9 /* Info.plist */,
@@ -241,6 +244,14 @@
 				4410EEA2249EE72000629BF9 /* DataServiceProvider.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		44DC380B249EEE99004BEFAC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44DC380C249EEEB1004BEFAC /* XCTestCase.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DC380D249EEEB1004BEFAC /* XCTestCase.swift in Sources */,
 				4410EEBB249EE8B700629BF9 /* DataServiceProviderMock.swift in Sources */,
 				4410EEBC249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift in Sources */,
 				4410EEBD249EE8B700629BF9 /* AlbumsListViewModelTests.swift in Sources */,

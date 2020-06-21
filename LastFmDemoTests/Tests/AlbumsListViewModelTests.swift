@@ -28,11 +28,7 @@ class AlbumsListViewModelTests: XCTestCase {
         
         viewModel.searchTerm = "Believe"
         
-        let expectation = self.expectation(description: UUID().uuidString)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            expectation.fulfill()
-        }
-        waitForExpectations(timeout: 4, handler: nil)
+        wait(for: 2)
         
         XCTAssert(viewModel.currentCount == 50, "There must be 50 albums in search")
         XCTAssert(viewModel.alubm(atIndex: 0)?.name == "Believe", "First album's name shoud be 'Believe'")
@@ -48,11 +44,7 @@ class AlbumsListViewModelTests: XCTestCase {
         var viewModel: AlbumsListViewModelProtocol = AlbumsListViewModel(withDelegate: albumsListViewModelDelegateMock)
         viewModel.searchTerm = "Believe"
         
-        var expectation = self.expectation(description: UUID().uuidString)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            expectation.fulfill()
-        }
-        waitForExpectations(timeout: 4, handler: nil)
+        wait(for: 2)
         
         XCTAssert(viewModel.currentCount == 50, "There must be 50 albums in search")
         XCTAssert(viewModel.alubm(atIndex: 0)?.name == "Believe", "First album's name shoud be 'Believe'")
@@ -63,11 +55,7 @@ class AlbumsListViewModelTests: XCTestCase {
         albumsListViewModelDelegateMock.onFetchCompletedCalled = false
         viewModel.fetchAlbums()
         
-        expectation = self.expectation(description: UUID().uuidString)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            expectation.fulfill()
-        }
-        waitForExpectations(timeout: 4, handler: nil)
+        wait(for: 2)
         
         XCTAssert(viewModel.currentCount == 100, "There must be 100 albums in search")
         XCTAssert(albumsListViewModelDelegateMock.onFetchCompletedCalled == true, "onFetchCompleted function must be called")
@@ -76,11 +64,7 @@ class AlbumsListViewModelTests: XCTestCase {
         albumsListViewModelDelegateMock.onFetchCompletedCalled = false
         viewModel.fetchAlbums()
         
-        expectation = self.expectation(description: UUID().uuidString)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            expectation.fulfill()
-        }
-        waitForExpectations(timeout: 4, handler: nil)
+        wait(for: 2)
         
         XCTAssert(viewModel.currentCount == 150, "There must be 150 albums in search")
         XCTAssert(albumsListViewModelDelegateMock.onFetchCompletedCalled == true, "onFetchCompleted function must be called")
@@ -106,11 +90,8 @@ class AlbumsListViewModelTests: XCTestCase {
         var viewModel: AlbumsListViewModelProtocol = AlbumsListViewModel(withDelegate: albumsListViewModelDelegateMock, dataService: dataServiceMock)
         viewModel.searchTerm = "Believe"
         
-        let expectation = self.expectation(description: UUID().uuidString)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            expectation.fulfill()
-        }
-        waitForExpectations(timeout: 4, handler: nil)
+        wait(for: 2)
+        
         XCTAssert(albumsListViewModelDelegateMock.onFetchFailedCalled == true, "onFetchFailed function must be called")
         XCTAssert(albumsListViewModelDelegateMock.exception != nil, "there must be an exceptino")
         if albumsListViewModelDelegateMock.exception != nil {
