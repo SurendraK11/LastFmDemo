@@ -46,6 +46,10 @@ AlbumTableViewCellViewModelProtocal for AlbumTableViewCell
 ### Service layer
 DataServiceProviding has a service apis e.g. allows to search for album
 
+### Request builder 
+RequestQueryBuilderProtocol is responsible to create url, used to interact with network apis using network service. RequestQueryBuilderProtocol is important class, which encapsulate implementation of creating url for defined endpoints
+
+
 ### Network layer
 HttpClientProtocol which process network request, using URLSession
 
@@ -59,3 +63,15 @@ dataNotFoundError
 dataParsingError
 
 unexpectedData
+
+
+### Testing 
+
+At the moment application covers 
+
+> testing of search album and paging in AlbumsListViewModelTests. 
+
+> testing of RequestQueryBuilder in RequestQueryBuilderTest
+
+Created mocks for DataServiceProviding and AlbumsListViewModelDelegate helped in testing. 
+
