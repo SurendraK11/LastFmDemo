@@ -124,7 +124,7 @@ extension AlbumsListViewController: AlbumsListViewModelDelegate {
     func onFetchFailed(with error: Error) {
         self.fetchingMore = false
         indicatorView.stopAnimating()
-        let action = UIAlertAction(title: "Cancel".localizedString, style: .cancel)
+        let cancel = UIAlertAction(title: "Cancel".localizedString, style: .cancel)
         let retry = UIAlertAction(title: "Retry".localizedString, style: .destructive) { [weak self] (_) in
             guard let self = self else {
                 return
@@ -133,7 +133,7 @@ extension AlbumsListViewController: AlbumsListViewModelDelegate {
             self.indicatorView.startAnimating()
             self.viewModel.fetchAlbums()
         }
-        showAlert("Warning".localizedString, message: error.localizedDescription, actions: [action, retry])
+        showAlert("Warning".localizedString, message: error.localizedDescription, actions: [cancel, retry])
     }
 }
 
