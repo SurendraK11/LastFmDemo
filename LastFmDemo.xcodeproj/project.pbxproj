@@ -137,6 +137,8 @@
 		4410EE67249EE58F00629BF9 /* LastFmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				44DC380F249F5453004BEFAC /* SupportingFiles */,
+				44DC380E249F5412004BEFAC /* Delegates */,
 				4410EE90249EE72000629BF9 /* Extenstions */,
 				4410EE8C249EE72000629BF9 /* Models */,
 				4410EE8E249EE72000629BF9 /* Networking */,
@@ -144,11 +146,6 @@
 				4410EE9D249EE72000629BF9 /* TableViewCells */,
 				4410EE99249EE72000629BF9 /* Viewcontrollers */,
 				4410EE93249EE72000629BF9 /* ViewModels */,
-				4410EE68249EE58F00629BF9 /* AppDelegate.swift */,
-				4410EE6A249EE58F00629BF9 /* SceneDelegate.swift */,
-				4410EE8B249EE72000629BF9 /* Constants.swift */,
-				4410EE8A249EE72000629BF9 /* CustomError.swift */,
-				4410EE6E249EE58F00629BF9 /* Main.storyboard */,
 				4410EE71249EE59100629BF9 /* Assets.xcassets */,
 				4410EE73249EE59100629BF9 /* LaunchScreen.storyboard */,
 				4410EE76249EE59100629BF9 /* Info.plist */,
@@ -252,6 +249,25 @@
 				44DC380C249EEEB1004BEFAC /* XCTestCase.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		44DC380E249F5412004BEFAC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4410EE68249EE58F00629BF9 /* AppDelegate.swift */,
+				4410EE6A249EE58F00629BF9 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		44DC380F249F5453004BEFAC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4410EE6E249EE58F00629BF9 /* Main.storyboard */,
+				4410EE8B249EE72000629BF9 /* Constants.swift */,
+				4410EE8A249EE72000629BF9 /* CustomError.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
