@@ -79,7 +79,7 @@ extension AlbumsListViewController: UITableViewDataSource, UITableViewDelegate {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         
-        // Identifying user scrolling table view, and reaching very last cell
+        // Identifying user scrolling table view, and reached very last cell
         if offsetY > contentHeight - scrollView.frame.height {
             
             // Attempt to fetch more data to show (if available)
