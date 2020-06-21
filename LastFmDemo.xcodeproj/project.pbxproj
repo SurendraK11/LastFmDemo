@@ -34,6 +34,7 @@
 		4410EEBC249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */; };
 		4410EEBD249EE8B700629BF9 /* AlbumsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */; };
 		44DC380D249EEEB1004BEFAC /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC380C249EEEB1004BEFAC /* XCTestCase.swift */; };
+		44DC3811249F8559004BEFAC /* HighLevelArchitecture.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DC3810249F8559004BEFAC /* HighLevelArchitecture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelDelegateMock.swift; sourceTree = "<group>"; };
 		4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsListViewModelTests.swift; sourceTree = "<group>"; };
 		44DC380C249EEEB1004BEFAC /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		44DC3810249F8559004BEFAC /* HighLevelArchitecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighLevelArchitecture.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				4410EE71249EE59100629BF9 /* Assets.xcassets */,
 				4410EE73249EE59100629BF9 /* LaunchScreen.storyboard */,
 				4410EE76249EE59100629BF9 /* Info.plist */,
+				44DC3810249F8559004BEFAC /* HighLevelArchitecture.png */,
 			);
 			path = LastFmDemo;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				4410EE75249EE59100629BF9 /* LaunchScreen.storyboard in Resources */,
 				4410EE72249EE59100629BF9 /* Assets.xcassets in Resources */,
 				4410EE70249EE58F00629BF9 /* Main.storyboard in Resources */,
+				44DC3811249F8559004BEFAC /* HighLevelArchitecture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
