@@ -12,7 +12,7 @@ protocol HttpClientProtocol {
     /// Process network request for expected data from server
     /// - Parameters:
     ///   - url: URL
-    ///   - completion: completion handler
+    ///   - completion: completion handler result with generic expected type T: Decodable  and Error
     func procesRequest<T: Decodable> (_ url: URL, completion: @escaping (Result<T, Error>) -> ())
 }
 
