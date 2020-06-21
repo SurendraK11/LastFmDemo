@@ -63,7 +63,7 @@ final class AlbumsListViewModel {
         }
     }
     
-    let dataService: DataServiceProviding
+    private let dataService: DataServiceProviding
     private weak var delegate: AlbumsListViewModelDelegate?
     
     init(withDelegate delegate: AlbumsListViewModelDelegate,  dataService: DataServiceProviding = DataServiceProvider()) {
