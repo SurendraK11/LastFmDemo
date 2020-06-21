@@ -20,7 +20,7 @@ Clone the repository, open LastFmDemo.xcodeproj and wait for **Swift Package** t
 
 Third party libraries are managed by Swift Package Dependencies 
 
-Kingfisher - it bind with UIImageView, which facilitate to download image and show asynchronously.
+Kingfisher -  It facilitates to download and show image asynchronously with UIImageView.
 
 
 ### Class definition 
@@ -29,9 +29,9 @@ Kingfisher - it bind with UIImageView, which facilitate to download image and sh
 
 User interface is built on Story board - Main.storyboard
 
-AlbumsListViewController - All user to search for album, it shows search result 
+AlbumsListViewController - Allows user to search for album, it shows search result in list
 
-AlbumDetailViewController - Show detail infomation of selected album 
+AlbumDetailViewController - Shows detail infomation of selected album 
 
 ### View Models
 
