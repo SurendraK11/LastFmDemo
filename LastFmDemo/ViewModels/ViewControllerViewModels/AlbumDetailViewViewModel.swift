@@ -41,9 +41,9 @@ extension AlbumDetailViewViewModel: AlbumDetailViewViewModelProtocol {
     
     var extralargeImageUrl: URL? {
         guard let extralargeImage = album.image.filter({ $0.size == .extralarge
-        }).first, let url = URL(string: extralargeImage.url) else {
+        }).first else {
             return nil
         }
-        return url
+        return URL(string: extralargeImage.url)
     }
 }

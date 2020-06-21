@@ -33,10 +33,10 @@ extension AlbumTableViewCellViewModel: AlbumTableViewCellViewModelProtocal {
     
     var smallImageUrl: URL? {
         guard let samllImage = album.image.filter({ $0.size == .small
-        }).first, let url =  URL(string: samllImage.url) else {
+        }).first else {
             return nil
         }
         
-        return url
+        return URL(string: samllImage.url)
     }
 }
