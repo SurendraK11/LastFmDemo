@@ -17,7 +17,7 @@ protocol DataServiceProviding {
     func searchForAlbum(_ queryBuilder: RequestQueryBuilderProtocol, complitionHandler: @escaping((Result<(albums :[Album], totalSearchResult: Int) , Error>) -> Void))
 }
 
-class DataServiceProvider {
+struct DataServiceProvider {
     let httpClient: HttpClientProtocol
     init(withHttpClient httpClient: HttpClientProtocol = HttpClient(session: .shared)) {
         self.httpClient = httpClient

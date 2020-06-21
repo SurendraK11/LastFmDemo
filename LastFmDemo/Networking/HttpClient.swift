@@ -17,7 +17,7 @@ protocol HttpClientProtocol {
 }
 
 
-class HttpClient {
+struct HttpClient {
     private let session: URLSession
     init(session: URLSession) {
         self.session = session

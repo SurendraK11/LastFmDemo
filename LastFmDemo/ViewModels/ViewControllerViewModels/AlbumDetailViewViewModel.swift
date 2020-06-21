@@ -20,7 +20,7 @@ protocol AlbumDetailViewViewModelProtocol {
     var extralargeImageUrl: URL? {get}
 }
 
-final class AlbumDetailViewViewModel {
+struct AlbumDetailViewViewModel {
     
     let album: Album
     init(withAlbum album: Album) {
