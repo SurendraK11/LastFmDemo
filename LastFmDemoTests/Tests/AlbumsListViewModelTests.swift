@@ -52,7 +52,7 @@ class AlbumsListViewModelTests: XCTestCase {
         XCTAssert(albumsListViewModelDelegateMock.onFetchCompletedCalled == true, "onFetchCompleted function must be called")
         
         //test for fetching next page page = 2
-        albumsListViewModelDelegateMock.onFetchCompletedCalled = false
+        albumsListViewModelDelegateMock.resetValues()
         viewModel.fetchAlbums()
         
         wait(for: 2)
@@ -61,7 +61,7 @@ class AlbumsListViewModelTests: XCTestCase {
         XCTAssert(albumsListViewModelDelegateMock.onFetchCompletedCalled == true, "onFetchCompleted function must be called")
         
         //test for fetching next page page = 3
-        albumsListViewModelDelegateMock.onFetchCompletedCalled = false
+        albumsListViewModelDelegateMock.resetValues()
         viewModel.fetchAlbums()
         
         wait(for: 2)

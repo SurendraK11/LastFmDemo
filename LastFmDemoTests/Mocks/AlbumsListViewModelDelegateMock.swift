@@ -8,12 +8,23 @@
 
 @testable import LastFmDemo
 
-class AlbumsListViewModelDelegateMock: AlbumsListViewModelDelegate {
+class AlbumsListViewModelDelegateMock {
     
-    var onFetchCompletedCalled = false
-    var onFetchFailedCalled = false
-    var didHandleMemoryWarningCalled = false
-    var exception: Error?
+    private(set) var onFetchCompletedCalled = false
+    private(set) var onFetchFailedCalled = false
+    private(set) var didHandleMemoryWarningCalled = false
+    private(set) var exception: Error?
+    
+    
+    func resetValues() {
+        onFetchCompletedCalled = false
+        onFetchFailedCalled = false
+        didHandleMemoryWarningCalled = false
+        exception = nil
+    }
+}
+
+extension AlbumsListViewModelDelegateMock: AlbumsListViewModelDelegate {
     
     func onFetchCompleted() {
         onFetchCompletedCalled = true
@@ -27,5 +38,4 @@ class AlbumsListViewModelDelegateMock: AlbumsListViewModelDelegate {
     func didHandleMemoryWarning() {
         didHandleMemoryWarningCalled = true
     }
-
 }
