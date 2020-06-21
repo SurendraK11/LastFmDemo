@@ -1,6 +1,8 @@
 # LastFmDemo
 
-Allows user to search album, search result displayed in list. Application shows detail information about album by selecting an album from list
+Allows user to search album, search result displayed in list. Application shows detail information about album by selecting an album from list.
+
+Search album api support **Paging**, so application took advantage of paging and fetch data per page
 
 ## High Level Architecture (MVVM)
 
