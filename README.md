@@ -1,6 +1,8 @@
 # LastFmDemo
 
-Allows user to search album, search result displayed in list. Application shows detail information about album by selecting an album from list
+Allows user to search album, search result displayed in list. Application shows detail information about album by selecting an album from list.
+
+Search album api supports **Paging**, so application took advantage of paging (fetching and displaying data per page)
 
 ## High Level Architecture (MVVM)
 
@@ -8,7 +10,16 @@ Allows user to search album, search result displayed in list. Application shows 
 
 ## Installation
 
-Clone repository and run
+Applicaiton is built on **Swift 5.0**, minimum deployment target **iOS 13.0**, and using **Xcode 11.5**
+
+Clone the repository, open LastFmDemo.xcodeproj and wait for **Swift Package** to configure dependencies (Swift Package Dependencies)
+
+### Third party libraries
+
+Third party libraries are managed by Swift Package Dependencies 
+
+Kingfisher - it bind with UIImageView, which facilitate to download image and show asynchronously.
+
 
 ### Class definition 
 
@@ -30,8 +41,14 @@ AlbumsListViewModelProtocol for AlbumsListViewController
 
 AlbumDetailViewViewModelProtocol for AlbumDetailViewController
 
+AlbumTableViewCellViewModelProtocal for AlbumTableViewCell
+
 ### Service layer
 DataServiceProviding has a service apis e.g. allows to search for album
+
+### Request builder 
+RequestQueryBuilderProtocol is responsible to create url, used to interact with network apis using network service. RequestQueryBuilderProtocol is important class, which encapsulate implementation of creating url for defined endpoints
+
 
 ### Network layer
 HttpClientProtocol which process network request, using URLSession
@@ -46,3 +63,15 @@ dataNotFoundError
 dataParsingError
 
 unexpectedData
+
+
+### Testing 
+
+At the moment application covers 
+
+  - testing of search album and paging in AlbumsListViewModelTests. 
+
+  - testing of RequestQueryBuilder in RequestQueryBuilderTest
+
+Created mocks for DataServiceProviding and AlbumsListViewModelDelegate helped in testing. 
+
