@@ -74,10 +74,15 @@ extension AlbumsListViewController: UITableViewDataSource, UITableViewDelegate {
         self.performSegue(withIdentifier: StoryboardSegueIdentifiers.detail, sender: (viewModel.alubm(atIndex: indexPath.row)))
     }
     
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
+        
+        // Identifying user scrolling table view, and reaching very last cell
         if offsetY > contentHeight - scrollView.frame.height {
+            
+            // Attempt to fetch more data to show (if available)
             if !fetchingMore && viewModel.hasMoreDataToShow {
                 fetchingMore = true
                 tableView.reloadSections(IndexSet(integer: 1), with: .none)
