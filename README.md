@@ -12,7 +12,7 @@ Search album api supports **Paging**, so application took advantage of paging (f
 
 Applicaiton is built on **Swift 5.0**, minimum deployment target **iOS 13.0**, and using **Xcode 11.5**
 
-Clone repository, open LastFmDemo.xcodeproj and wait for Swift Package Dependencies to configure third party libraries
+Clone repository, open LastFmDemo.xcodeproj and wait for **Swift Package Dependencies** to configure third party libraries
 
 ### Third party libraries
 
