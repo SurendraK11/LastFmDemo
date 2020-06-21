@@ -15,6 +15,7 @@ Clone repository and run
 User interface is built on Story board - Main.storyboard
 
 AlbumsListViewController - All user to search for album, it shows search result 
+
 AlbumDetailViewController - Show detail infomation of selected album 
 
 ### View Models
