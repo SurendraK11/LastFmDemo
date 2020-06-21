@@ -69,9 +69,9 @@ unexpectedData
 
 At the moment application covers 
 
-> testing of search album and paging in AlbumsListViewModelTests. 
+  - testing of search album and paging in AlbumsListViewModelTests. 
 
-> testing of RequestQueryBuilder in RequestQueryBuilderTest
+  - testing of RequestQueryBuilder in RequestQueryBuilderTest
 
 Created mocks for DataServiceProviding and AlbumsListViewModelDelegate helped in testing. 
 
