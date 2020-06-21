@@ -96,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440689AE249EEB6D00883C8E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */,
+				4410EEB6249EE8B700629BF9 /* RequestQueryBuilderTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		440689AF249EEB8000883C8E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */,
+				4410EEB7249EE8B700629BF9 /* DataServiceProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		4410EE5C249EE58F00629BF9 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +157,8 @@
 		4410EE7E249EE59100629BF9 /* LastFmDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4410EEB8249EE8B700629BF9 /* AlbumsListViewModelDelegateMock.swift */,
-				4410EEB9249EE8B700629BF9 /* AlbumsListViewModelTests.swift */,
-				4410EEB7249EE8B700629BF9 /* DataServiceProviderMock.swift */,
-				4410EEB6249EE8B700629BF9 /* RequestQueryBuilderTest.swift */,
+				440689AF249EEB8000883C8E /* Mocks */,
+				440689AE249EEB6D00883C8E /* Tests */,
 				4410EE81249EE59100629BF9 /* Info.plist */,
 			);
 			path = LastFmDemoTests;
