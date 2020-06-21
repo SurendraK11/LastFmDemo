@@ -8,7 +8,16 @@ Allows user to search album, search result displayed in list. Application shows 
 
 ## Installation
 
-Clone repository and run
+Applicaiton is built on **Swift 5.0**, minimum deployment target **iOS13.0**, and using **Xcode 11.5**
+
+Clone repository, open LastFmDemo.xcodeproj and wait for Swift Package Dependencies to configure third party libraries
+
+### Third party libraries
+
+Third party libraries are managed by Swift Package Dependencies 
+
+Kingfisher - it allows to bind with UIImageView, which facilitate to download image and show asynchronously.
+
 
 ### Class definition 
 
