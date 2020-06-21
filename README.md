@@ -41,6 +41,8 @@ AlbumsListViewModelProtocol for AlbumsListViewController
 
 AlbumDetailViewViewModelProtocol for AlbumDetailViewController
 
+AlbumTableViewCellViewModelProtocal for AlbumTableViewCell
+
 ### Service layer
 DataServiceProviding has a service apis e.g. allows to search for album
 
