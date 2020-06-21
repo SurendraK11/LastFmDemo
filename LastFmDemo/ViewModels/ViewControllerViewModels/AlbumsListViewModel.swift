@@ -103,10 +103,13 @@ extension AlbumsListViewModel: AlbumsListViewModelProtocol {
     }
     
     func fetchAlbums() {
-        dataService.searchForAlbum(RequestQueryBuilder.searchAlbum(searchTerm: searchTerm, page: currentPage)) { (result) in
+        dataService.searchForAlbum(RequestQueryBuilder.searchAlbum(searchTerm: searchTerm, page: currentPage)) { [weak self] (result) in
             switch result {
             case .success(let result):
                 DispatchQueue.main.async {
+                    guard let self = self else {
+                        return
+                    }
                     if self.isNewSearch {
                         self.albumList.removeAll()
                         self.isNewSearch = false
@@ -118,8 +121,8 @@ extension AlbumsListViewModel: AlbumsListViewModelProtocol {
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
-                    self.isNewSearch = false
-                    self.delegate?.onFetchFailed(with: error)
+                    self?.isNewSearch = false
+                    self?.delegate?.onFetchFailed(with: error)
                 }
             }
         }
