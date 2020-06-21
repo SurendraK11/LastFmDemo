@@ -21,9 +21,11 @@ AlbumDetailViewController - Show detail infomation of selected album
 ### View Models
 
 Every view controller has its own view model, which is responsible to interact with service layer, managing data model (update, delete etc), business logic. 
+
 Benefits of view model are level of code separation, responsibility, testability, code readability etc
 
 AlbumsListViewModelProtocol for AlbumsListViewController
+
 AlbumDetailViewViewModelProtocol for AlbumDetailViewController
 
 ### Service layer
