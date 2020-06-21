@@ -64,6 +64,8 @@ dataParsingError
 
 unexpectedData
 
+### Handling error
+Implemented cancel/ retry option for more user friendly experience 
 
 ### Testing 
 
