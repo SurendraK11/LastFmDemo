@@ -8,7 +8,7 @@ Allows user to search album, search result displayed in list. Application shows 
 
 ## Installation
 
-Applicaiton is built on **Swift 5.0**, minimum deployment target **iOS13.0**, and using **Xcode 11.5**
+Applicaiton is built on **Swift 5.0**, minimum deployment target **iOS 13.0**, and using **Xcode 11.5**
 
 Clone repository, open LastFmDemo.xcodeproj and wait for Swift Package Dependencies to configure third party libraries
 
