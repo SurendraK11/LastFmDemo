@@ -16,7 +16,7 @@ Clone repository, open LastFmDemo.xcodeproj and wait for Swift Package Dependenc
 
 Third party libraries are managed by Swift Package Dependencies 
 
-Kingfisher - it allows to bind with UIImageView, which facilitate to download image and show asynchronously.
+Kingfisher - it bind with UIImageView, which facilitate to download image and show asynchronously.
 
 
 ### Class definition 
