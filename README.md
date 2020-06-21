@@ -3,6 +3,8 @@
 Allows user to search album, search result displayed in list. Application shows detail information about album by selecting an album from list.
 
 Search album api supports **Paging**, so application took advantage of paging (fetching and displaying data per page)
+**Handling erro** Implemented cancel/ retry option for more user friendly experience 
+
 
 ## High Level Architecture (MVVM)
 
@@ -63,9 +65,6 @@ dataNotFoundError
 dataParsingError
 
 unexpectedData
-
-### Handling error
-Implemented cancel/ retry option for more user friendly experience 
 
 ### Testing 
 
