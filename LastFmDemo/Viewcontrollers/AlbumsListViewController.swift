@@ -124,8 +124,16 @@ extension AlbumsListViewController: AlbumsListViewModelDelegate {
     func onFetchFailed(with error: Error) {
         self.fetchingMore = false
         indicatorView.stopAnimating()
-        let action = UIAlertAction(title: "OK".localizedString, style: .default)
-        showAlert("Error".localizedString, message: error.localizedDescription, actions: [action])
+        let action = UIAlertAction(title: "Cancel".localizedString, style: .cancel)
+        let retry = UIAlertAction(title: "Retry".localizedString, style: .destructive) { [weak self] (_) in
+            guard let self = self else {
+                return
+            }
+            self.fetchingMore = true
+            self.indicatorView.startAnimating()
+            self.viewModel.fetchAlbums()
+        }
+        showAlert("Warning".localizedString, message: error.localizedDescription, actions: [action, retry])
     }
 }
 

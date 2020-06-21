@@ -121,7 +121,6 @@ extension AlbumsListViewModel: AlbumsListViewModelProtocol {
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
-                    self?.isNewSearch = false
                     self?.delegate?.onFetchFailed(with: error)
                 }
             }
